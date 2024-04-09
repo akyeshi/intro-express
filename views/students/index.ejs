@@ -1,0 +1,16 @@
+<%- include('../partials/header.ejs') %>
+<body>
+  <%- include('../partials/nav') %>
+  <h1>Students: </h1>
+  <ul>
+    <% students.forEach(student => { %>
+      <li>
+        <%= student.username %>
+        -> 
+        <%= student.favColor %>
+      </li>
+    <% }) %>
+  </ul>
+  
+</body>
+</html>

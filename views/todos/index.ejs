@@ -1,0 +1,15 @@
+<%- include('../partials/header.ejs') %>
+<body>
+  <%- include('../partials/nav.ejs') %>
+  <h1>All To Dos</h1>
+  <ul>
+    <% todos.forEach(td => { %>
+      <li>
+        <%= td.todo %>
+        - 
+        <%= td.done ? 'done' : 'not done' %>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
